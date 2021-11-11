@@ -12,6 +12,9 @@
   <body>
     <!--sign in sign up 機能の実装-->
     <% if user_signed_in? %>
+      <l1>
+        <%= link_to "投稿フォーム", new_post_image_path %>
+      </l1>
       <li>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
       </li>
